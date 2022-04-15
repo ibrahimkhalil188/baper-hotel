@@ -8,7 +8,6 @@ const FoodDetails = () => {
     if (count <= 0) {
         setCount(1)
     }
-    console.log(count)
     const { breakfastId } = useParams()
     const selectedItem = breakfast?.filter(item => item.id === breakfastId)
     const { img, name, price, description } = selectedItem[0]
