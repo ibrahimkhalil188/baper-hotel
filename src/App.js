@@ -16,7 +16,7 @@ function App() {
       <FoodHeader />
 
       <Routes>
-        <Route path='breakfast' element={<BreakFasts />} />
+        <Route path='/' element={<BreakFasts />} />
         <Route path='dinner' element={<Dinners></Dinners>}
         ></Route>
         <Route path='lunch' element={<Lunchs></Lunchs>}></Route>
