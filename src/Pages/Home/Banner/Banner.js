@@ -3,7 +3,7 @@ import BannerImage from "../../../Images/bannerbackground.png"
 const Banner = () => {
     return (
         <div className='container mx-auto'>
-            <div className='flex justify-center items-center' style={{ height: "80vh", width: "100%", backgroundImage: `url(${BannerImage})` }}>
+            <div className='flex justify-center items-center' style={{ height: "86vh", width: "100%", backgroundImage: `url(${BannerImage})` }}>
                 <div>
                     <h1 className='text-4xl font-mono font-bold m-4'>Best Food Waiting For Your Belly</h1>
                     <div className='relative mx-auto text-center'>
