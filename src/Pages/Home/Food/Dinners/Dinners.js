@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Dinner = () => {
+const Dinners = () => {
     return (
         <div>
-
+            this
         </div>
     );
 };
 
-export default Dinner;
+export default Dinners;
