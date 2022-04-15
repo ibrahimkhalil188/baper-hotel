@@ -8,6 +8,7 @@ import BreakFasts from './Pages/Home/Food/BreakFasts/BreakFasts';
 import Dinners from './Pages/Home/Food/Dinners/Dinners';
 import Lunchs from './Pages/Home/Food/Lunchs/Lunchs';
 import Reason from './Pages/Home/Reason/Reason';
+import FoodDetails from './Pages/Home/Food/FoodDetails/FoodDetails';
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<BreakFasts />} />
+        <Route path='/:breakfastId' element={<FoodDetails></FoodDetails>}></Route>
         <Route path='dinner' element={<Dinners></Dinners>}
         ></Route>
         <Route path='lunch' element={<Lunchs></Lunchs>}></Route>

@@ -6,8 +6,8 @@ import { BsArrowRightShort } from "react-icons/bs"
 const Reason = () => {
     const reasons = [
         { id: "1", img: staff1, title: "Fastest delivery", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" },
-        { id: "3", img: staff3, title: "Home delivery", description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the' },
-        { id: "2", img: staff2, title: "A Good Auto Responder", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" }
+        { id: "2", img: staff3, title: "Home delivery", description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the' },
+        { id: "3", img: staff2, title: "A Good Auto Responder", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the" }
 
     ]
     return (
@@ -15,7 +15,7 @@ const Reason = () => {
             <h1 className='text-4xl text-center mt-20 font-bold text-[#e51a4b]'>Why you should choose us</h1>
             <div className='grid md:grid-cols-3 container mx-auto gap-6 mt-20'>
                 {reasons.map(reason =>
-                    <div className='p-4 hover:shadow-md'>
+                    <div key={reason.id} className='p-4 hover:shadow-md'>
                         <img src={reason.img} alt="" />
                         <h1 className='text-2xl text-center my-6'>{reason.title}</h1>
                         <p>{reason.description}</p>
